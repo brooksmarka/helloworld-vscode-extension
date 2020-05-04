@@ -35,6 +35,13 @@ function activate(context) {
 		});
 
 	context.subscriptions.push(whatever);
+
+	let warning = vscode.commands.registerCommand('helloworld.warn', function () {
+	
+		vscode.window.showWarningMessage('Goodbye world');
+	});
+
+context.subscriptions.push(warning);
 }
 exports.activate = activate;
 

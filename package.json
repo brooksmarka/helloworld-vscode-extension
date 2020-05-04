@@ -11,7 +11,8 @@
 	],
 	"activationEvents": [
 		"onCommand:helloworld.helloWorld",
-		"onCommand:helloworld.time"
+		"onCommand:helloworld.time",
+		"onCommand:helloworld.warn"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -23,6 +24,10 @@
 			{
 				"command": "helloworld.time",
             	"title": "Find Time"
+			},
+			{
+				"command": "helloworld.warn",
+            	"title": "2020"
 			}
 		]
 	},
